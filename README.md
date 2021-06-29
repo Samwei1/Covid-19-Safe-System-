@@ -18,3 +18,24 @@ The reasons are listed as follows: Firstly, the Red-Black tree is stable than th
 Dijkstra's algorithm can be used to find the nearest hospital because this problem is a single source shortest paths problem. So, I decided to use Dijkstra’s algorithm with the priority queue to find the shortest path for this problem.
 There are several reasons: Firstly, the distance between any two places cannot be negative. So, Dijkstra’s algorithm can handle this problem. Secondly, the priority queue can improve Dijkstra’s algorithm efficiency. By using the priority queue, the extract-min step can be improved to 𝑂(𝑙𝑜𝑔(𝑉)). Thirdly, the time complexity of Dijkstra’s algorithm with the priority queue is 𝑂(𝐸 ∗ 𝑙𝑜𝑔(𝑉)) and the time complexity of Bellman-Ford algorithm is 𝑂(𝑉𝐸) (where V means the number of vertexes and E means the number of edges). So, Dijkstra’s algorithm with the priority queue has lower time complexity than Bellman-Ford algorithm. Therefore, Dijkstra’s algorithm with the priority queue is a good method to deal with this problem.
 So, we can always find some shortest paths between the center point of the postcode area and all hospitals by using Dijkstra's algorithm with the priority queue and then select the nearest hospital and final path based on the minimum distance of these shortest paths.
+
+## How to use
+### Installation
+1. Make sure you have JDK on your computer. If not, please download JDK from https://www.oracle.com/java/technologies/javase-jdk11-downloads.html.
+2. Open a terminal and go to direction of this folder you downloaded.
+3. Put “javac MainInterface.java” to the terminal and run.
+4. Go to the downloaded folder and you will see a MainInterface.class. Please make sure
+MainInterface.class is in your folder.
+### Using
+Using through terminal:
+1. Go to the direction of this folder in terminal.
+2. Put “java MainInterface” and run. You will see a new interface on your screen.
+Otherwise:
+1. Go to the downloaded folder.
+2. Double click “MainInterface.class” and you will see a new interface on your screen.
+
+If you are medical worker in ACT, you should click “I am a medical worker in ACT” and then you will see there are three functions: add record, delete record, and search record. If you want to use these functions, just click these buttons.
+
+If you are residence in ACT, you should click “I am a residence in ACT” and then you will see there are two functions: find the shortest path to the nearest hospital, show the most dangerous place in ACT. If you want to use these functions, just click these buttons.
+
+Note: If you want to go back to the previous page, just click “<-” button.

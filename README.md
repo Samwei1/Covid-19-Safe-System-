@@ -1,1 +1,2 @@
-# Covid-19-Safe-System-
+# Covid-19-Safe-System
+This is a software that support both medical workers and residences in ACT. For medical workers, this system can help workers find patient’s information efficient by given id, decide which person should be treated at first under insufficient resource, add new patient’s information record, and delete these recover patients records. As for residences in ACT, this system guides people who are fell unwell to find a path to the closest hospital by given postcode.
